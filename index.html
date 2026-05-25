@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Family Connect</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="branding">
+        <div class="family-logo" aria-label="Family logo">
+          <span>👨‍👩‍👧‍👦</span>
+        </div>
+        <div>
+          <p class="eyebrow">Welcome to the family circle</p>
+          <h1>Our Family Connect</h1>
+          <p class="subtitle">Share updates, celebrate moments, and keep family close.</p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-panel">
+        <div class="hero-copy">
+          <h2>Say hello, share your memories, and plan the next family event.</h2>
+          <p>Every photo, story, comment and event belongs here — made to feel warm, bright, and easy on mobile.</p>
+        </div>
+        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=900&q=80" alt="Family gathering smiling together" class="hero-image" />
+      </section>
+
+      <section class="action-panel">
+        <div class="panel-header">
+          <div>
+            <p class="eyebrow">Family Activity</p>
+            <h2>Create a new post or event</h2>
+          </div>
+          <p class="micro-copy">Add images, share memories, or plan a family outing.</p>
+        </div>
+
+        <form id="postForm" class="post-form">
+          <div class="field-row">
+            <label for="postAuthor">Your name</label>
+            <input id="postAuthor" type="text" placeholder="Enter your name" value="Family Member" />
+          </div>
+
+          <div class="field-row">
+            <label for="postText">Share something</label>
+            <textarea id="postText" rows="4" placeholder="Write a message, memory, or special announcement..."></textarea>
+          </div>
+
+          <div class="field-row compact-row">
+            <div>
+              <label for="postType">Share type</label>
+              <select id="postType">
+                <option value="post">Post</option>
+                <option value="event">Event</option>
+              </select>
+            </div>
+            <div class="image-upload">
+              <label for="postImage">Add photo</label>
+              <input id="postImage" type="file" accept="image/*" />
+            </div>
+          </div>
+
+          <div id="eventFields" class="field-row hidden">
+            <div>
+              <label for="eventDate">Event date</label>
+              <input id="eventDate" type="date" />
+            </div>
+            <div>
+              <label for="eventTime">Event time</label>
+              <input id="eventTime" type="time" />
+            </div>
+            <div>
+              <label for="eventLocation">Location</label>
+              <input id="eventLocation" type="text" placeholder="Where it will happen" />
+            </div>
+          </div>
+
+          <div class="field-row image-preview-row hidden" id="imagePreviewRow">
+            <img id="imagePreview" alt="Selected post preview" />
+            <button type="button" class="ghost-btn" id="removeImage">Remove image</button>
+          </div>
+
+          <div class="form-actions">
+            <button id="submitPost" type="submit" class="primary-btn">Share with family</button>
+            <button id="clearForm" type="button" class="ghost-btn">Clear</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="feed-panel">
+        <div class="panel-header">
+          <div>
+            <p class="eyebrow">Latest family updates</p>
+            <h2>Family feed</h2>
+          </div>
+          <p class="micro-copy">Tap to comment, edit, or celebrate together.</p>
+        </div>
+        <div id="feed" class="feed"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Designed to keep family connected with a warm and joyful experience on phones and tablets.</p>
+    </footer>
+  </div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

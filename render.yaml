@@ -1,0 +1,8 @@
+services:
+  - type: static_site
+    name: family-connect
+    env: static
+    branch: main
+    root: ./
+    publishPath: ./
+    buildCommand: ""

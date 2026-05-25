@@ -1,16 +1,15 @@
 :root {
-  color-scheme: dark;
-  --bg: #f7f3ee;
-  --surface: #ffffff;
-  --surface-strong: #fcf7f1;
-  --text: #262626;
-  --muted: #6f6b65;
-  --primary: #d66d29;
-  --primary-soft: #f5d8c1;
-  --border: rgba(44, 17, 3, 0.12);
-  --shadow: 0 18px 45px rgba(20, 20, 20, 0.09);
-  --radius: 24px;
-  --radius-sm: 16px;
+  --bg: #0f0f1a;
+  --surface: #0f1724;
+  --surface-strong: #0b1220;
+  --text: #f3f4f6;
+  --muted: #bfc4d5;
+  --primary: #6a00f4;
+  --primary-soft: #bfa5ff;
+  --border: rgba(255, 255, 255, 0.04);
+  --shadow: 0 18px 45px rgba(10, 10, 20, 0.35);
+  --radius: 20px;
+  --radius-sm: 14px;
 }
 
 * {
@@ -21,7 +20,7 @@ html, body {
   margin: 0;
   min-height: 100%;
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  background: linear-gradient(180deg, #fff7f1 0%, #f1ede9 100%);
+  background: radial-gradient(circle at 10% 10%, rgba(106,0,244,0.08), transparent 10%), linear-gradient(180deg, #071022 0%, #0f1724 100%);
   color: var(--text);
 }
 
@@ -49,13 +48,13 @@ body {
 .family-logo {
   width: 84px;
   height: 84px;
-  border-radius: 28px;
+  border-radius: 20px;
   display: grid;
   place-items: center;
-  background: linear-gradient(135deg, #f3b37b 0%, #dd5c1c 100%);
+  background: linear-gradient(135deg, #7b5cff 0%, #6a00f4 100%);
   color: white;
   font-size: 2.4rem;
-  box-shadow: 0 16px 40px rgba(214, 109, 41, 0.22);
+  box-shadow: 0 18px 40px rgba(106, 0, 244, 0.18);
 }
 
 .eyebrow {

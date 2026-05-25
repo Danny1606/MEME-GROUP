@@ -1,10 +1,10 @@
-# Family Connect Website
+# MEME GROUP Website
 
-This is a static family website with:
+This is a static MEME GROUP site for sharing memes and funny quotes:
 
 - responsive mobile-friendly design
-- family logo and welcome header
-- post/event creation
+- meme logo and welcoming header
+- create meme posts (images and captions)
 - image upload preview
 - comment support
 - edit/delete post actions
@@ -21,4 +21,4 @@ This is a static family website with:
 7. Set **Publish Directory** to `/`.
 8. Deploy.
 
-Once deployed, Render will host your site as a static website.
+Once deployed, Render will host your static meme site.

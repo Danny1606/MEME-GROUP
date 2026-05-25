@@ -1,6 +1,6 @@
 services:
   - type: static_site
-    name: family-connect
+    name: meme-group
     env: static
     branch: main
     root: ./

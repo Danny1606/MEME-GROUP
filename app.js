@@ -13,7 +13,7 @@ const imagePreview = document.getElementById('imagePreview');
 const removeImage = document.getElementById('removeImage');
 const clearForm = document.getElementById('clearForm');
 
-const STORAGE_KEY = 'familyConnectFeed';
+const STORAGE_KEY = 'memeGroupFeed';
 let posts = [];
 let selectedImageData = null;
 
@@ -28,28 +28,28 @@ function loadPosts() {
     posts = [
       {
         id: createId(),
-        author: 'Grandma',
+        author: 'MemeBot',
         type: 'post',
-        text: 'Welcome to our family garden! Share your favorite memory with everyone.',
+        text: "When life gives you lemons, make meme-ade. 😂",
         createdAt: Date.now() - 1000 * 60 * 60 * 6,
         image: '',
         eventDate: '',
         eventTime: '',
         eventLocation: '',
         comments: [
-          { id: createId(), name: 'Aunty Joy', text: 'This is such a lovely idea!' }
+          { id: createId(), name: 'User123', text: "This is peak content!" }
         ]
       },
       {
         id: createId(),
-        author: 'Dad',
-        type: 'event',
-        text: 'Family picnic at the lake this Sunday. Bring your favorite dish!',
+        author: 'Admin',
+        type: 'post',
+        text: "Drop your funniest one-liner below — top comment gets pinned!",
         createdAt: Date.now() - 1000 * 60 * 60 * 2,
         image: '',
-        eventDate: new Date(Date.now() + 1000 * 60 * 60 * 24).toISOString().slice(0, 10),
-        eventTime: '11:00',
-        eventLocation: 'Sunrise Lake Park',
+        eventDate: '',
+        eventTime: '',
+        eventLocation: '',
         comments: []
       }
     ];
@@ -123,7 +123,7 @@ function renderFeed() {
 
 function resetForm() {
   postText.value = '';
-  postAuthor.value = 'Family Member';
+  postAuthor.value = 'Meme Poster';
   postType.value = 'post';
   eventFields.classList.add('hidden');
   eventDate.value = '';
@@ -142,7 +142,7 @@ function handleFormSubmit(event) {
   const type = postType.value;
 
   if (!text) {
-    alert('Please write a message to share with family.');
+    alert('Please write a meme or funny quote to share.');
     return;
   }
 
@@ -239,7 +239,7 @@ function handleFeedClick(event) {
 
     const post = posts.find(item => item.id === postId);
     if (!post) return;
-    post.comments.push({ id: createId(), name: 'Family Member', text: commentText });
+    post.comments.push({ id: createId(), name: 'Meme Poster', text: commentText });
     savePosts();
     renderFeed();
   }

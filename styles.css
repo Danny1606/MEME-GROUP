@@ -87,8 +87,8 @@ h1 {
   margin: 24px 0 32px;
   padding: 28px;
   border-radius: var(--radius);
-  background: linear-gradient(180deg, rgba(255,255,255,.9), rgba(255,255,255,.8));
-  border: 1px solid rgba(255,255,255,0.7);
+  background: linear-gradient(180deg, rgba(77,166,255,.15), rgba(77,166,255,.1));
+  border: 1px solid rgba(77,166,255,0.3);
   box-shadow: var(--shadow);
 }
 
@@ -225,10 +225,10 @@ button {
 }
 
 .card {
-  background: #fff;
+  background: #cce5ff;
   border-radius: 24px;
-  border: 1px solid rgba(221, 193, 171, 0.4);
-  box-shadow: 0 20px 35px rgba(37, 27, 20, 0.08);
+  border: 1px solid rgba(77, 166, 255, 0.6);
+  box-shadow: 0 20px 35px rgba(13, 43, 125, 0.15);
   overflow: hidden;
 }
 
@@ -248,10 +248,11 @@ button {
 
 .card-title strong {
   font-size: 1rem;
+  color: #001a4d;
 }
 
 .card-meta {
-  color: var(--muted);
+  color: #0d2b7d;
   font-size: 0.9rem;
 }
 
@@ -261,8 +262,8 @@ button {
   align-items: center;
   padding: 8px 12px;
   border-radius: 999px;
-  background: #fff4ef;
-  color: #b75a22;
+  background: #99ccff;
+  color: #001a4d;
   font-size: 0.8rem;
   font-weight: 700;
 }
@@ -275,7 +276,7 @@ button {
 
 .card-body p {
   margin: 0;
-  color: var(--text);
+  color: #001a4d;
 }
 
 .post-image {
@@ -294,8 +295,8 @@ button {
 .detail-item {
   padding: 14px 16px;
   border-radius: 18px;
-  background: #fff4ef;
-  color: #6e472d;
+  background: #99ccff;
+  color: #001a4d;
 }
 
 .card-actions {
@@ -324,12 +325,14 @@ button {
   gap: 6px;
   padding: 14px 16px;
   border-radius: 18px;
-  background: #faf3ee;
-  border: 1px solid rgba(214, 109, 41, 0.12);
+  background: #99ccff;
+  border: 1px solid rgba(13, 43, 125, 0.2);
+  color: #001a4d;
 }
 
 .comment-item strong {
   display: block;
+  color: #001a4d;
 }
 
 .comment-input-row {
@@ -356,9 +359,10 @@ button {
   display: inline-block;
   padding: 10px 14px;
   border-radius: 16px;
-  background: rgba(77, 166, 255, 0.1);
-  color: var(--primary);
+  background: #66b3ff;
+  color: #001a4d;
   font-size: 0.9rem;
+  font-weight: 600;
 }
 
 .hidden {

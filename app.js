@@ -97,8 +97,8 @@ function renderFeed() {
           </div>
         ` : ''}
         <div class="card-actions">
-          <button type="button" data-action="edit" data-id="${post.id}" class="ghost-btn">Edit</button>
-          <button type="button" data-action="delete" data-id="${post.id}" class="ghost-btn">Delete</button>
+          ${post.ownerId === postAuthor.value ? `<button type="button" data-action="edit" data-id="${post.id}" class="ghost-btn">Edit</button>
+          <button type="button" data-action="delete" data-id="${post.id}" class="ghost-btn">Delete</button>` : '<span class="read-only-note">View only</span>'}
         </div>
         <div class="comment-section">
           <div class="comment-input-row">
@@ -161,7 +161,8 @@ function handleFormSubmit(event) {
     eventDate: eventDate.value,
     eventTime: eventTime.value,
     eventLocation: eventLocation.value,
-    comments: []
+    comments: [],
+    ownerId: author
   };
 
   posts.push(newPost);

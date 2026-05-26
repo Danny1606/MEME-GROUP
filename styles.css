@@ -1,11 +1,11 @@
 :root {
-  --bg: #0f0f1a;
-  --surface: #0f1724;
-  --surface-strong: #0b1220;
+  --bg: #001a4d;
+  --surface: #0d2b7d;
+  --surface-strong: #0a1f5c;
   --text: #f3f4f6;
   --muted: #bfc4d5;
-  --primary: #6a00f4;
-  --primary-soft: #bfa5ff;
+  --primary: #4da6ff;
+  --primary-soft: #99ccff;
   --border: rgba(255, 255, 255, 0.04);
   --shadow: 0 18px 45px rgba(10, 10, 20, 0.35);
   --radius: 20px;
@@ -20,7 +20,7 @@ html, body {
   margin: 0;
   min-height: 100%;
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  background: radial-gradient(circle at 10% 10%, rgba(106,0,244,0.08), transparent 10%), linear-gradient(180deg, #071022 0%, #0f1724 100%);
+  background: radial-gradient(circle at 10% 10%, rgba(77,166,255,0.15), transparent 10%), linear-gradient(180deg, #001a4d 0%, #0d2b7d 100%);
   color: var(--text);
 }
 
@@ -51,10 +51,10 @@ body {
   border-radius: 20px;
   display: grid;
   place-items: center;
-  background: linear-gradient(135deg, #7b5cff 0%, #6a00f4 100%);
+  background: linear-gradient(135deg, #4da6ff 0%, #2680cc 100%);
   color: white;
   font-size: 2.4rem;
-  box-shadow: 0 18px 40px rgba(106, 0, 244, 0.18);
+  box-shadow: 0 18px 40px rgba(77, 166, 255, 0.25);
 }
 
 .eyebrow {
@@ -199,17 +199,17 @@ button {
 }
 
 .primary-btn {
-  background: linear-gradient(135deg, #ec8d52 0%, #d66d29 100%);
+  background: linear-gradient(135deg, #4da6ff 0%, #2680cc 100%);
   color: white;
   padding: 14px 22px;
-  box-shadow: 0 13px 25px rgba(214, 109, 41, 0.18);
+  box-shadow: 0 13px 25px rgba(77, 166, 255, 0.25);
 }
 
 .ghost-btn {
   background: transparent;
   color: var(--primary);
   padding: 14px 18px;
-  border: 1px solid rgba(214, 109, 41, 0.2);
+  border: 1px solid rgba(77, 166, 255, 0.3);
 }
 
 .form-actions {
@@ -344,9 +344,18 @@ button {
 }
 
 .comment-input-row button {
-  background: #f2c09f;
-  color: #582f1c;
+  background: #4da6ff;
+  color: white;
   padding: 12px 18px;
+}
+
+.read-only-note {
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 16px;
+  background: rgba(77, 166, 255, 0.1);
+  color: var(--primary);
+  font-size: 0.9rem;
 }
 
 .hidden {
@@ -357,6 +366,13 @@ button {
   padding: 18px 0 12px;
   color: var(--muted);
   text-align: center;
+}
+
+.footer-contact {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(77, 166, 255, 0.2);
+  font-size: 0.9rem;
 }
 
 @media (max-width: 900px) {
